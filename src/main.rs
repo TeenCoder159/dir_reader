@@ -4,8 +4,8 @@ use walkdir::WalkDir;
 fn main() {
     // Get path from command line or use current directory
     let args: Vec<String> = env::args().collect();
-    let start_path = args.get(1).map_or(".", String::as_str);
-    let extension = args.get(2);
+    let start_path = args.get(2).map_or(".", String::as_str);
+    let extension = args.get(1);
 
     // Traverse directories
     for entry in WalkDir::new(start_path)

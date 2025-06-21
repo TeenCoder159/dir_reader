@@ -10,11 +10,11 @@ Make sure you have rust installed:
 and you can use dir_reader like this:
 
 ```
-dir_reader <path> <fileextension>
+dir_reader <fileextension> <path>
 ```
 
 Example:
 ```
-dir_reader . rs
+dir_reader rs .
 ```
 > Looks through all directories from current direcotry and prints out the path to the respective file 
